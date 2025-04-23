@@ -35,11 +35,11 @@ first of all you should link your `google form` with `google sheet`
 5. **Run the script**
 
    ```bash
-   # node
-   node extractStudents.mjs
+   # compile the ts
+   npx tsc
 
-   # npm
-   npm start
+   # run
+   node dist/extractStudents.js
    ```
 
    The script will:
