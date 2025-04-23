@@ -1,0 +1,21 @@
+{
+  "name": "sce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon extractStudents.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "googleapis": "^148.0.0",
+    "nodemon": "^3.1.10"
+  },
+  "devDependencies": {
+    "prettier": "3.5.3"
+  }
+}
