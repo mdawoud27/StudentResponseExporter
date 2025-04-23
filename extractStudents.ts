@@ -56,6 +56,9 @@ const exportStudentResponses = async () => {
     }
 
     header.forEach((student: string, colIndex: number) => {
+      const studentId = Number(student);
+      if (isNaN(studentId)) return; // Skip if it's not a number
+
       const responses = rows
         .map((row) => row[colIndex]?.trim())
         .filter(Boolean)
@@ -75,6 +78,5 @@ const exportStudentResponses = async () => {
   }
 };
 
-// Run every 1 second
 exportStudentResponses();
-setInterval(exportStudentResponses, 1000);
+setInterval(exportStudentResponses, 1000); // 1 second
