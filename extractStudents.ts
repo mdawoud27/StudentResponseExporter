@@ -6,7 +6,6 @@ import { fileURLToPath } from 'url';
 import * as dotenv from 'dotenv';
 dotenv.config();
 
-// __dirname fix for ESM
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
